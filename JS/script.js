@@ -94,7 +94,7 @@ function editTask(id,name,index){//this function is incvoked when edit button is
         alert("Please enter new value for task "+name)
     }
 }
-function toggleDropdown(){
+function toggleDropdown(){//toggle dropdown items
     $('#dropdownbody').slideToggle(400);
 }
 
@@ -128,4 +128,4 @@ form.addEventListener('submit', (e) => { //when the form is submited this callba
     }
     e.target.taskinput.value = ""; // Empty the task input value 
 })
-loadTasks();
+loadTasks(); //when page is loaded LoadTasks function is Invoked
