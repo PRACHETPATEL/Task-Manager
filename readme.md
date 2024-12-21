@@ -1,7 +1,11 @@
 # Task Manager Web Application
 
 This is a simple Task Manager Web Application that allows users to manage their daily tasks. The application supports task creation, marking tasks as complete, deleting tasks, editing tasks, and filtering tasks. It uses JavaScript for dynamic behavior, jQuery for enhancements like smooth animations and filtering, and local storage to persist tasks.
+## Table of Contents
 
+- [Features Implemented](#features-implemented)
+- [How to Run the Webpage Locally](#how-to-run-the-project-locally)
+- [Folder Structure](#folder-structure)
 ## Features Implemented
 
 ### 1. **Basic Page Setup**

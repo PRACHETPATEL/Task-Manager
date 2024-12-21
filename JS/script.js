@@ -30,7 +30,7 @@ function getTableRecordHTML(uuid, name, createdAt,complete,index) { //this funct
     return `<tr id="${uuid}" class="${complete?'complete':'pending'}">
                     <td class="${complete?'strikethrough':''}">${name}</td>
                     ${complete?'<td></td>':`<td><button class="btn completebtn" onclick="markTaskComplete('${uuid}','${name}')"><i class="fa fa-check"></button></td>`}
-                    ${complete?'<td></td>':`<td><input type="text" class="taskinput taskeditinput" placeholder="Ender Edited Task" id="${uuid+index.toString()}" name="taskeditinput" required><button class="btn editbtn" onclick="editTask('${uuid}','${name}','${index}')"><i class="fa fa-pen"></button></td>`}
+                    ${complete?'<td></td>':`<td><input type="text" class="taskinput taskeditinput" placeholder="Enter Edited Task" id="${uuid+index.toString()}" name="taskeditinput" required><button class="btn editbtn" onclick="editTask('${uuid}','${name}','${index}')"><i class="fa fa-pen"></button></td>`}
                     <td><button class="btn deletebtn" onclick="deleteTask('${uuid}','${name}')"><i class="fa fa-trash"></button></td>
                     <td class="${complete?'strikethrough':''}">${formatTimestamp(createdAt)}</td>
                 </tr>`

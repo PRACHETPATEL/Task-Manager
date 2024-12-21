@@ -18,10 +18,11 @@
     </header>
     <main>
         <form class="form" id="form">
-            <input type="text" class="taskinput" placeholder="Ender Task" id="taskinput" name="taskinput" required>
+            <input type="text" class="taskinput" placeholder="Enter Task" id="taskinput" name="taskinput" required>
             <button type="submit" class="btn submitbtn">Add Task</button>
+            
         </form>
-        <div class="dropdowncontainer">
+        <div class="dropdowncontainer" style="">
             <button class="dropdown" onclick="toggleDropdown()">Dropdown</button>
             <div style="display: none;" id="dropdownbody">
                 <div class="dropdownitems" onclick="loadTasks()">ALL TASKS</div>
@@ -38,7 +39,6 @@
                     <th>DELETE</th>
                     <th>CREATEDON</th>
                 </tr>
-                
             </table>
         </div>
     </main>
