@@ -1,0 +1,16 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "Take Home Project HTML CSS JS JQUERY 1_2025",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Developed",
+    "By",
+    "Prachet"
+  ],
+  "author": "Prachet Patel",
+  "license": "ISC"
+}

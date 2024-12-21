@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="./ASSETS/logo.jpg">
+    <title>Task Manager</title>
 </head>
+
 <body>
-    
+    <header>
+        <h2>Task Manager</h2>
+    </header>
+    <main>
+        <form class="form">
+            <input type="text" placeholder="Ender Task" id="taskinput" name="taskinput" required>
+            <button type="submit" class="btn submitbtn">Add Task</button>
+        </form>
+        <div class="dropdowncontainer">
+            <button class="dropdown">Dropdown</button>
+            <div>
+                <div class="dropdownitems">ALL TASKS</div>
+                <div class="dropdownitems">COMPLETED TASKS</div>
+                <div class="dropdownitems">PENDING TASKS</div>
+            </div>
+        </div>
+        <div style="overflow-x: auto;" id="tablecontainer">
+            <table id="tasktable">
+                <tr>
+                    <th>Task</th>
+                    <th>MARKCOMPLETE</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+                <tr>
+                    <td class="strikethrough">task-1</td>
+                    <td><button class="btn completebtn"><i class="fa fa-check"></button></td>
+                    <td><button class="btn editbtn"><i class="fa fa-pen"></button></td>
+                    <td><button class="btn deletebtn"><i class="fa fa-trash"></button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
     <script src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
