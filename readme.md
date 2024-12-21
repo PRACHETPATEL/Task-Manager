@@ -49,7 +49,7 @@ This is a simple Task Manager Web Application that allows users to manage their 
 
 ### Prerequisites:
 - A web browser (Google Chrome, Firefox, etc.)
-
+- Internet Connection as jQuery and uuid generator are imported using CDN
 ### Steps:
 1. Download or clone the repository to your local machine:
    ```bash
