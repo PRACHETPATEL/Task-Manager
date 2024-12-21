@@ -17,42 +17,38 @@
         <h2>Task Manager</h2>
     </header>
     <main>
-        <form class="form">
-            <input type="text" placeholder="Ender Task" id="taskinput" name="taskinput" required>
+        <form class="form" id="form">
+            <input type="text" class="taskinput" placeholder="Ender Task" id="taskinput" name="taskinput" required>
             <button type="submit" class="btn submitbtn">Add Task</button>
         </form>
         <div class="dropdowncontainer">
-            <button class="dropdown">Dropdown</button>
-            <div>
-                <div class="dropdownitems">ALL TASKS</div>
-                <div class="dropdownitems">COMPLETED TASKS</div>
-                <div class="dropdownitems">PENDING TASKS</div>
+            <button class="dropdown" onclick="toggleDropdown()">Dropdown</button>
+            <div style="display: none;" id="dropdownbody">
+                <div class="dropdownitems" onclick="loadTasks()">ALL TASKS</div>
+                <div class="dropdownitems" onclick="loadCompletedTasks()">COMPLETED TASKS</div>
+                <div class="dropdownitems" onclick="loadPendingTasks()">PENDING TASKS</div>
             </div>
         </div>
-        <div style="overflow-x: auto;" id="tablecontainer">
+        <div id="tablecontainer" class="tablecontainer">
             <table id="tasktable">
                 <tr>
                     <th>Task</th>
-                    <th>MARKCOMPLETE</th>
+                    <th width="50px">MARKCOMPLETE</th>
                     <th>EDIT</th>
                     <th>DELETE</th>
+                    <th>CREATEDON</th>
                 </tr>
-                <tr>
-                    <td class="strikethrough">task-1</td>
-                    <td><button class="btn completebtn"><i class="fa fa-check"></button></td>
-                    <td><button class="btn editbtn"><i class="fa fa-pen"></button></td>
-                    <td><button class="btn deletebtn"><i class="fa fa-trash"></button></td>
-                </tr>
+                
             </table>
         </div>
     </main>
-    <script src="./JS/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
